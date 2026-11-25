@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christmas Trip | Huis Ten Bosch</title>
+<style>
+:root {
+ --wine:#641f30;
+ --gold:#c7a363;
+ --cream:#fffaf0;
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth}
+body {
+ margin:0;
+ background:var(--cream);
+ color:#493b32;
+ font-family:"Hiragino Mincho ProN",serif;
+ line-height:1.8;
+}
+.hero {
+ background:radial-gradient(ellipse at top,#943c4d,#42101f);
+ color:#f4dfb2;
+ padding:65px 20px;
+ text-align:center;
+ border:8px double var(--gold);
+}
+.hero h1 {
+ font-family:Georgia,serif;
+ font-size:40px;
+ font-weight:normal;
+ line-height:1.3;
+ margin:24px 0;
+}
+.ornament {font-size:30px;letter-spacing:12px}
+.english {letter-spacing:3px;font-size:12px}
+nav {
+ position:sticky;
+ top:0;
+ background:var(--wine);
+ padding:12px;
+ display:flex;
+ gap:18px;
+ overflow-x:auto;
+ z-index:10;
+}
+nav a {
+ color:#f4dfb2;
+ white-space:nowrap;
+ font-size:13px;
+ text-decoration:none;
+}
+main {max-width:700px;margin:auto;padding:20px}
+section {scroll-margin-top:70px;margin-bottom:38px}
+h2 {
+ color:var(--wine);
+ text-align:center;
+ border-bottom:1px solid var(--gold);
+ padding-bottom:14px;
+ font-size:23px;
+}
+.card {
+ background:white;
+ border:1px solid #d8c39c;
+ border-radius:10px;
+ padding:20px;
+ margin:15px 0;
+ box-shadow:0 4px 14px #641f3009;
+}
+.day {
+ color:var(--wine);
+ font-family:Georgia,serif;
+ font-size:25px;
+ border-bottom:1px solid #e6d7bd;
+ padding-bottom:10px;
+}
+.small {font-size:12px;color:#8a7150}
+.timeline {
+ border-left:2px solid var(--gold);
+ margin:20px 0 0 5px;
+ padding-left:18px;
+}
+.event {padding:8px 0 18px}
+.time {color:var(--wine);font-weight:bold}
+.route {
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ text-align:center;
+ gap:10px;
+}
+.clock {
+ font-family:Georgia,serif;
+ font-size:32px;
+ color:var(--wine);
+}
+a {color:var(--wine)}
+.button {
+ display:block;
+ background:var(--wine);
+ color:#fff5df;
+ padding:12px;
+ margin:10px 0;
+ border-radius:6px;
+ text-align:center;
+ text-decoration:none;
+}
+input[type=text],textarea {
+ width:100%;
+ padding:12px;
+ font:inherit;
+ border:1px solid #d8c39c;
+ border-radius:6px;
+ background:#fffaf0;
+}
+.check {
+ display:flex;
+ gap:12px;
+ align-items:center;
+ padding:10px 0;
+ border-bottom:1px solid #eee4d4;
+}
+input[type=checkbox] {
+ width:20px;
+ height:20px;
+ accent-color:var(--wine);
+}
+footer {
+ background:var(--wine);
+ color:#f4dfb2;
+ text-align:center;
+ padding:40px 20px;
+}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="ornament">✧ ❄ ✧</div>
+ <p class="english">CHRISTMAS FAMILY TRIP</p>
+ <h1>Huis<br>Ten Bosch</h1>
+ <p>クリスマスの魔法に包まれる3日間</p>
+ <p>2026.12.17 — 12.19</p>
+ <div class="ornament">❦</div>
+</header>
+<nav>
+ <a href="#schedule">旅程表</a>
+ <a href="#flight">航空券</a>
+ <a href="#hotel">ホテル</a>
+ <a href="#park">アトラクション</a>
+ <a href="#food">お食事</a>
+ <a href="#packing">持ち物</a>
+</nav>
+<main>
+<section id="schedule">
+<h2>✧ 旅のスケジュール ✧</h2>
+<p class="small">移動・園内スケジュールは仮プラン</p>
+<div class="card">
+ <div class="day">DAY 01</div>
+ <p class="small">12月17日 THURSDAY</p>
+ <h3>長崎への旅</h3>
+ <div class="timeline">
+  <div class="event"><span class="time">16:00頃</span><br>セントレア到着・チェックイン</div>
+  <div class="event"><span class="time">16:30頃</span><br>早めの夕食</div>
+  <div class="event"><span class="time">18:00</span><br>NH373 中部国際空港出発</div>
+  <div class="event"><span class="time">19:35</span><br>長崎空港到着</div>
+  <div class="event">ホテルへ移動・チェックイン</div>
+ </div>
+</div>
+<div class="card">
+ <div class="day">DAY 02</div>
+ <p class="small">12月18日 FRIDAY</p>
+ <h3>夢のクリスマス</h3>
+ <div class="timeline">
+  <div class="event"><span class="time">朝</span><br>ホテルで朝食</div>
+  <div class="event"><span class="time">開園時間</span><br>ハウステンボス入園</div>
+  <div class="event"><span class="time">午前</span><br>メリーゴーラウンド・ミッフィーエリア</div>
+  <div class="event"><span class="time">12:00頃</span><br>ランチ</div>
+  <div class="event"><span class="time">午後</span><br>アトラクション・カフェ休憩</div>
+  <div class="event"><span class="time">夕方</span><br>クリスマスマーケット・夕食</div>
+  <div class="event"><span class="time">夜</span><br>イルミネーション鑑賞</div>
+ </div>
+</div>
+<div class="card">
+ <div class="day">DAY 03</div>
+ <p class="small">12月19日 SATURDAY</p>
+ <h3>思い出を胸に</h3>
+ <div class="timeline">
+  <div class="event"><span class="time">朝</span><br>朝食・チェックアウト</div>
+  <div class="event"><span class="time">午前〜午後</span><br>ハウステンボス再入園または周辺観光</div>
+  <div class="event">お土産選び</div>
+  <div class="event"><span class="time">夕方</span><br>長崎空港へ移動・夕食</div>
+  <div class="event"><span class="time">20:15</span><br>NH374 長崎空港出発</div>
+  <div class="event"><span class="time">21:25</span><br>セントレア到着</div>
+ </div>
+</div>
+</section>
+
+<section id="flight">
+<h2>✈ Flight Information</h2>
+<div class="card">
+ <p class="small">往路 ｜ ANA NH373</p>
+ <div class="route">
+  <div>中部 NGO<div class="clock">18:00</div></div>
+  <div>✈</div>
+  <div>長崎 NGS<div class="clock">19:35</div></div>
+ </div>
+</div>
+<div class="card">
+ <p class="small">復路 ｜ ANA NH374</p>
+ <div class="route">
+  <div>長崎 NGS<div class="clock">20:15</div></div>
+  <div>✈</div>
+  <div>中部 NGO<div class="clock">21:25</div></div>
+ </div>
+</div>
+<p class="small">出発・到着時刻は予約情報と照合してください。</p>
+<div class="card">
+ <h3>座席メモ</h3>
+ <p class="small">入力内容はこのブラウザ内にのみ保存されます。</p>
+ <label>娘<input type="text" id="seat1" placeholder="座席番号"></label>
+ <label>パパ<input type="text" id="seat2" placeholder="座席番号"></label>
+ <label>ママ<input type="text" id="seat3" placeholder="座席番号"></label>
+</div>
+<a class="button" href="https://www.ana.co.jp/">ANA公式サイト</a>
+</section>
+
+<section id="hotel">
+<h2>❦ Hotel Stay</h2>
+<div class="card">
+ <h3>宿泊ホテル</h3>
+ <p>2泊3日・ホテル未定</p>
+ <input type="text" id="hotelname" placeholder="ホテル名を入力">
+ <p>候補：ホテルヨーロッパ、ホテルアムステルダム、ホテルオークラJRハウステンボス</p>
+ <textarea id="hotelmemo" placeholder="送迎・朝食・温泉などのメモ"></textarea>
+</div>
+</section>
+
+<section id="park">
+<h2>✧ Attractions ✧</h2>
+<div class="card">
+ <h3>楽しみたいアトラクション</h3>
+ <label class="check"><input type="checkbox" id="a1">スカイカルーセル</label>
+ <label class="check"><input type="checkbox" id="a2">ミッフィーのエリア</label>
+ <label class="check"><input type="checkbox" id="a3">白い観覧車</label>
+ <label class="check"><input type="checkbox" id="a4">カナルクルーザー</label>
+ <label class="check"><input type="checkbox" id="a5">クリスマスマーケット</label>
+ <label class="check"><input type="checkbox" id="a6">イルミネーション</label>
+ <p class="small">営業状況・年齢・身長・妊娠中の利用制限は公式情報を確認してください。</p>
+</div>
+<a class="button" href="https://www.huistenbosch.co.jp/">ハウステンボス公式サイト・園内案内</a>
+<a class="button" href="https://www.google.com/maps/search/?api=1&query=ハウステンボス">Googleマップを開く</a>
+</section>
+
+<section id="food">
+<h2>❦ Dining</h2>
+<div class="card">
+ <h3>お食事候補</h3>
+ <p>佐世保バーガー</p>
+ <p>長崎ちゃんぽん・皿うどん</p>
+ <p>ホテルレストラン</p>
+ <p>クリスマスマーケットのフード</p>
+ <textarea id="foodmemo" placeholder="レストラン・予約メモ"></textarea>
+</div>
+</section>
+
+<section id="packing">
+<h2>✧ Packing List ✧</h2>
+<div class="card">
+ <p id="progress"></p>
+ <label class="check"><input type="checkbox" id="p1">航空券・予約情報</label>
+ <label class="check"><input type="checkbox" id="p2">スマホ・充電器</label>
+ <label class="check"><input type="checkbox" id="p3">モバイルバッテリー</label>
+ <label class="check"><input type="checkbox" id="p4">着替え・パジャマ</label>
+ <label class="check"><input type="checkbox" id="p5">ダウン・防寒着</label>
+ <label class="check"><input type="checkbox" id="p6">手袋・マフラー</label>
+ <label class="check"><input type="checkbox" id="p7">保険証・医療関係書類</label>
+ <label class="check"><input type="checkbox" id="p8">常備薬</label>
+ <label class="check"><input type="checkbox" id="p9">子どもの暇つぶしグッズ</label>
+ <label class="check"><input type="checkbox" id="p10">折りたたみ傘</label>
+</div>
+</section>
+</main>
+<footer>
+ <div class="ornament">✧ ❄ ✧</div>
+ <p>Merry Christmas</p>
+ <p class="english">OUR SPECIAL MEMORIES</p>
+</footer>
+<script>
+const fields=document.querySelectorAll('input, textarea');
+function progress(){
+ const items=[...document.querySelectorAll('#packing input')];
+ const done=items.filter(x=>x.checked).length;
+ document.getElementById('progress').textContent =
+ '準備完了 '+done+' / '+items.length;
+}
+fields.forEach(el=>{
+ const key='htb2026-'+el.id;
+ try {
+ const saved=localStorage.getItem(key);
+ if(saved!==null){
+ if(el.type==='checkbox')el.checked=saved==='true';
+ else el.value=saved;
+ }
+ } catch(e){}
+ el.addEventListener('input',()=>{
+ try{
+ localStorage.setItem(key,el.type==='checkbox'?el.checked:el.value);
+ }catch(e){}
+ progress();
+ });
+});
+progress();
+</script>
+</body>
+</html>
